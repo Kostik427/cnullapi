@@ -19,7 +19,7 @@ class CreateToken:
         if not os.path.exists(self.tokens_file):
             self.json_handler.save_json({})
 
-    def _create_token(self, user_id, token_type, custom_max_tokens=None, custom_token_generator=None, permissions=None):
+    def create_token(self, user_id, token_type, custom_max_tokens=None, custom_token_generator=None, permissions=None):
         data = self.json_handler.load_json()
         token = custom_token_generator() if custom_token_generator else self.token_creator.generate_token()
     
