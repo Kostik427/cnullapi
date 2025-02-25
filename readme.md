@@ -1,4 +1,6 @@
-Разрабатываю cnull для того чтобы в будущем, супергибкое парс апи.
+# CNULL - Is simple manager f/ tokens & other
+cnull (bcs i not sure what to call it)
+
 
 1.0
 + revocation token
